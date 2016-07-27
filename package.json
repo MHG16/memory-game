@@ -1,0 +1,19 @@
+{
+  "name": "memory-game",
+  "version": "1.0.0",
+  "description": "A JavaScript memory game in which you match pairs of cards",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JavaScript",
+    "memory",
+    "game"
+  ],
+  "author": "Martin Grossmann",
+  "license": "ISC",
+  "dependencies": {
+    "jQuery": "^1.7.4"
+  }
+}
