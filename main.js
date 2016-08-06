@@ -42,6 +42,6 @@ function newBoard() {
 
 }
 
-newBoard();  
+newBoard(); 
 
 
