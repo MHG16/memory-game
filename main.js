@@ -1,4 +1,6 @@
 //array to hold all the pairs of letters
+//Possibly use objects here with images so game will be 
+//to match images instead of letters.  
 var memory_array = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J', 'K', 'K', 'L', 'L']
 
 var memory_values = [];
