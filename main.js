@@ -76,17 +76,20 @@ function memoryFlipTile(tile,val) {
 			} else {
 				//no match is made so flip the 2 cards back over
 				function flip2Back() {
-					var tile_1 = document.getElementById(memory_tileids[0]);
-					var tile_2 = document.getElementById(memory_tileids[1]); 
-
+					var tile_1 = document.getElementById(memory_tile_ids[0]);
+					var tile_2 = document.getElementById(memory_tile_ids[1]); 
+					tile_1.style.background = 'background-color: blue';
+					tile_1.innerHTML = "";
+					tile_2.style.background = 'background-color: blue';
+					tile_2.innerHTML = "";
+					//clear both arrays
+					memory_values = [];
+					memory_tile_ids = [];
 				}
 			}
 			//sets length of time before cards flipped back.  
 			setTimeout(flip2Back, 700);
 		}	
-		}
 	}
-
-
 }
 
