@@ -44,6 +44,49 @@ function newBoard() {
 
 }
 
-newBoard(); 
+window.addEventListener(
+newBoard()); 
 
+
+//Function to flip two cards and check if there is a match
+function memoryFlipTile(tile,val) {
+	if(tile.innerHTML == "" && memory_values.length < 2) {
+		tile.style.background ='#FFF';
+		tile.innerHTML = val;
+		//first card flipped
+		if(memory_values.length == 0) {
+			memory_values.push(val);
+			memory_tile_ids.push(tile.id);
+		//second card flipped	
+		} else if(memory_values.length == 1) {
+			memory_values.push(val);
+			memory_tile_ids.push(tile.id);
+			//check to see if we have a match
+			if(memory_values[0] == memory_values[1]) {
+				tiles_flipped +=2;
+				//clear both arrays
+				memory_values = [];
+				memory_tile_ids = [];
+				//check to see if the whole board is cleared
+				if(tiles_flipped == memory_array.length) {
+					alert("Board cleared... generating new board");
+					document.getElementById('memory_board').innerHTML = "";
+					newBoard();
+				}
+			} else {
+				//no match is made so flip the 2 cards back over
+				function flip2Back() {
+					var tile_1 = document.getElementById(memory_tileids[0]);
+					var tile_2 = document.getElementById(memory_tileids[1]); 
+
+				}
+			}
+			//sets length of time before cards flipped back.  
+			setTimeout(flip2Back, 700);
+		}	
+		}
+	}
+
+
+}
 
